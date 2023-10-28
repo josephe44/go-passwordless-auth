@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Message</title>
+  </head>
+  <body>
+    <table
+      align="center"
+      width="600"
+      style="border-collapse: collapse; font-family: Arial, sans-serif"
+    >
+      <tr>
+        <td
+          style="
+            background-color: #007acc;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+          "
+        >
+          <h2>Your OTP</h2>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding: 20px">
+          <p>Dear User,</p>
+          <p>Your One-Time Password (OTP) for authentication is:</p>
+          <h2
+            style="
+              background-color: #007acc;
+              color: #fff;
+              display: inline-block;
+              padding: 5px 10px;
+              border-radius: 5px;
+            "
+          >
+            {{ .Name}}
+          </h2>
+          <p>Please use this OTP to complete your action.</p>
+          <p>If you did not request this OTP, please ignore this email.</p>
+        </td>
+      </tr>
+      <tr>
+        <td
+          style="background-color: #f4f4f4; padding: 10px; text-align: center"
+        >
+          <p>&copy; 2023 Eworld Tech Company</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
