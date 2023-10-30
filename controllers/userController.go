@@ -59,6 +59,8 @@ func Signup(c *gin.Context) {
 				OTP:   otpCode,
 			}
 
+			util.SendSimpleMailHTML("OTP Sent", []string{user.Email}, otpCode)
+
 			if otpCode != "" {
 				c.Set("otp", otpCode)
 				// Return it
