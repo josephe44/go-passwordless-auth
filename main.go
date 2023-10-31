@@ -27,7 +27,7 @@ func main() {
 	// fmt.Println(otp)
 
 	// Users
-	r.POST("/signup", controllers.Signup)
+	r.POST("/auth", controllers.UserAuth)
 
 	r.Run()
 }
