@@ -15,17 +15,6 @@ func main() {
 
 	r := gin.Default()
 
-	// result, error := util.GenerateOTPCode()
-
-	// if error != nil {
-	// 	fmt.Println("There is an error generating OTP")
-	// 	return
-	// }
-
-	// otp := util.SendSimpleMailWithHTML(result, "./util/test.html", []string{"josephe442@gmail.com"})
-
-	// fmt.Println(otp)
-
 	// Users
 	r.POST("/auth", controllers.UserAuth)
 
